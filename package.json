@@ -1,0 +1,37 @@
+{
+  "name": "melange-basic-template-react",
+  "version": "1.0.0",
+  "description": "A simple project template using [Melange](https://github.com/melange-re/melange).",
+  "main": "index.js",
+  "scripts": {
+    "build": "esy bsb -make-world",
+    "start": "esy build ",
+    "clean": "esy bsb -clean-world",
+    "server": "webpack-dev-server --config=webpack.config.js",
+    "test": "echo \"Error: no test swpecified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/idkjs/melange-basic-template-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/idkjs/melange-basic-template-react/issues"
+  },
+  "homepage": "https://github.com/idkjs/melange-basic-template-react#readme",
+  "dependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@rescript/std": "^9.1.0",
+    "babel-loader": "^8.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "reason-react": "^0.9.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

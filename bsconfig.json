@@ -1,0 +1,22 @@
+{
+  "name": "melange-basic-project",
+  "version": "0.0.1",
+  "reason": {
+    "react-jsx": 3
+  },
+  "sources": {
+    "dir": "src"
+  },
+  "package-specs": [
+    {
+      "module": "es6",
+      "in-source": true
+    }
+  ],
+  "suffix": ".bs.js",
+  "external-stdlib": "@rescript/std",
+  "bs-dependencies": [ "reason-react" ],
+  "warnings": {
+    "error": "+101"
+  }
+}

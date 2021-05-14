@@ -1,0 +1,10 @@
+{
+  "name": "melange-project",
+  "dependencies": {
+    "@opam/ocaml-lsp-server": "*",
+    "melange": "melange-re/melange",
+    "ocaml": "4.12.x"
+  },
+  "esy": { "buildsInSource": "unsafe", "build": "bsb -make-world" },
+  "installConfig": { "pnp": false }
+}
