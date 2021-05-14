@@ -14,8 +14,7 @@
     }
   ],
   "suffix": ".bs.js",
-  "external-stdlib": "@rescript/std",
-  "bs-dependencies": [ "reason-react" ],
+  "bs-dependencies": [ "reason-react","credt" ],
   "warnings": {
     "error": "+101"
   }

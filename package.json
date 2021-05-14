@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "esy bsb -make-world",
-    "start": "esy build ",
+    "start": "esy bsb -make-world ",
     "clean": "esy bsb -clean-world",
     "postinstall": "esy",
     "server": "webpack-dev-server --config=webpack.config.js",
@@ -23,15 +23,16 @@
   },
   "homepage": "https://github.com/idkjs/melange-basic-template-react#readme",
   "dependencies": {
-    "esy": "*",
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
-    "@rescript/std": "^9.1.0",
     "babel-loader": "^8.1.0",
+    "credt": "eldh/credt.git",
+    "esy": "*",
     "html-webpack-plugin": "^4.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "reason-react": "^0.9.1",
+    "tablecloth-bucklescript": "^0.0.7",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
