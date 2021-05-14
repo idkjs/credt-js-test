@@ -44,21 +44,27 @@ let me = {
   email: "andreas@eldh.co",
   age: 35,
 };
-
+Js.log2("me", me);
 let miniMe = {
   UserList.id: Credt.Util.makeId(),
   name: "Sixten",
   email: "sixten@eldh.co",
   age: 2,
 };
+Js.log2("miniMe", miniMe);
+// let userStdList2 = userStdList->UserList.Append(me) |> ignore;
+// Js.log2("userStdList2", userStdList2);
 
-[
-  UserList.Append(me),
-  Update(me.id, SetEmail("a@eldh.co")),
-  UserList.Append(miniMe),
-  Update(miniMe.id, SetName("Sixten Eldh")),
-]
-|> UserList.addToTransaction;
+let userStdList2 =
+  [
+    UserList.Append(me),
+    Update(me.id, SetEmail("a@eldh.co")),
+    UserList.Append(miniMe),
+    Update(miniMe.id, SetName("Sixten Eldh")),
+  ]
+  |> UserList.addToTransaction
+  |> Js.log2("userStdList2", _);
+Js.log2("userStdList2", userStdList->Belt.List.toArray);
 [@react.component]
 let make = () => {
   let userStdList = userStdList->Belt.List.toArray;

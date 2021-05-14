@@ -150,6 +150,8 @@ var me = {
   age: 35
 };
 
+console.log("me", me);
+
 var miniMe_id = Util$negCredt.makeId(undefined);
 
 var miniMe = {
@@ -159,7 +161,9 @@ var miniMe = {
   age: 2
 };
 
-Curry._1(addToTransaction, {
+console.log("miniMe", miniMe);
+
+var __x = Curry._1(addToTransaction, {
       hd: {
         TAG: /* Append */0,
         _0: me
@@ -193,6 +197,10 @@ Curry._1(addToTransaction, {
       }
     });
 
+console.log("userStdList2", __x);
+
+console.log("userStdList2", Belt_List.toArray(userStdList));
+
 function Main(Props) {
   var userStdList$1 = Belt_List.toArray(userStdList);
   return React.createElement("div", undefined, React.createElement("header", undefined, "Hello React"), Belt_Array.mapWithIndex(userStdList$1, (function (i, user) {
@@ -203,6 +211,8 @@ function Main(Props) {
                   })));
 }
 
+var userStdList2;
+
 var make = Main;
 
 export {
@@ -211,6 +221,7 @@ export {
   userStdList ,
   me ,
   miniMe ,
+  userStdList2 ,
   make ,
   
 }
